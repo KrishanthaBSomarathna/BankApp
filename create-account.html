@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Account</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="navbar">
+            <h1>Core Banking Dashboard</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product-management.html">Product Management</a></li>
+                    <li><a href="customer-management.html">Customer Management</a></li>
+                    <li><a href="reports.html">Reports</a></li>
+                    <li><a href="settings.html">Settings</a></li>
+                    <li><a href="login.html">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <h2>Create New Customer Account</h2>
+        <form action="submit-account.html" method="post">
+            <div class="form-group">
+                <label for="customerName">Customer Name</label>
+                <input type="text" id="customerName" name="customerName" placeholder="Enter customer name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter customer email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="accountType">Account Type</label>
+                <select id="accountType" name="accountType" required>
+                    <option value="savings">Savings Account</option>
+                    <option value="checking">Checking Account</option>
+                    <option value="loan">Loan Account</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="initialDeposit">Initial Deposit</label>
+                <input type="number" id="initialDeposit" name="initialDeposit" placeholder="Enter initial deposit" required>
+            </div>
+
+            <div class="buttons">
+                <input type="submit" class="cta-btn" value="Create Account">
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Core Banking System. All rights reserved.</p>
+    </footer>
+</body>
+</html>
